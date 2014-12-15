@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>CheckMyTeam</title>
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/themes/deep-orange-theme.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/themes/indigo-theme.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/themes/grey-theme.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/themes/light-blue-dark-theme.css"/>
+</head>
+<body>
+
+<div ng-app="CheckMyTeam" layout="column" md-theme="indigo">
+    <md-content>
+        <md-toolbar>
+            <h2 class="md-toolbar-tools">
+                <span>[&#10003;] Composition des équipe</span>
+            </h2>
+        </md-toolbar>
+
+        <md-content>
+            <form style="padding: 20px;">
+                <div class="row">
+                    <md-text-float label="Nom" ng-model="user.title"></md-text-float>
+                    <label for="">Niveau</label>
+                    <md-radio-group ng-model="data.group1">
+                        <md-radio-button value="Apple" aria-label="Label 1">Apple</md-radio-button>
+                        <md-radio-button value="Banana"> Banana </md-radio-button>
+                        <md-radio-button value="Mango" aria-label="Label 3">Mango</md-radio-button>
+                    </md-radio-group>
+                    <md-button class="md-primary">Ajouter</md-button>
+                    <md-button >Annuler</md-button>
+                </div>
+            </form>
+        </md-content>
+    </md-content>
+</div>
+
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/hammerjs/hammer.js"></script>
+<script src="bower_components/pouchdb/dist/pouchdb.js"></script>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
